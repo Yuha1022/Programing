@@ -1,49 +1,46 @@
+// 管理者用ログイン画面
 import React, { useState } from 'react'; // React、エラーメッセージ用
 import { useNavigate } from 'react-router-dom'; // ページ遷移用
-import './admi_login.module.css'; // CSSファイル
+import styles from './admi_login.module.css'; // CSSモジュール
 import pawloversImg from './admi_pawlovers-side.jpg'; // PawLovers画像
 
-const AdminLoginPage = () => {
+const AdmiLoginPage = () => {
   const navigate = useNavigate(); // ページ遷移用
+
   const [email, setEmail] = useState(''); // メールアドレス状態
   const [password, setPassword] = useState(''); // パスワード状態
   const [errorMessage, setErrorMessage] = useState(''); // エラーメッセージ状態
 
   const handleLogin = () => { // 「ログイン」ボタン押下
     if (!email) { // メールアドレスが空の場合
-      setErrorMessage('※メールアドレスを入力してください。');
+      setErrorMessage('※メールアドレスを入力してください。'); // エラーメッセージ表示
       return;
-    }
-    if (!password) { // パスワードが空の場合
-      setErrorMessage('※パスワードを入力してください。');
+    } else if (!password) { // パスワードが空の場合
+      setErrorMessage('※パスワードを入力してください。'); // エラーメッセージ表示
       return;
-    }
-    if (email === 'admin@example.com' && password === 'password123') { // 仮のパスワード(成功例)
+    } else if (email === 'admin@example.com' && password === 'password123') { // 仮のパスワード(成功例)
       navigate('/top'); // トップページに移動
     } else { // 失敗の場合
-      setErrorMessage('※メールアドレスまたはパスワードが間違っています。'); 
+      setErrorMessage('※メールアドレスまたはパスワードが間違っています。'); // エラーメッセージ表示
+      navigate('/top'); // トップページに移動(仮)
     }
-  };
-
-  const handleRegister = () => { //「新規会員登録」ボタン押下
-    navigate('/terms'); // 新規会員登録ページに移動
   };
 
   return (
-    <div className="body">
+    <div className={styles.body}>
       <img
         src={pawloversImg} // PawLovers画像
         alt="pawloversImg" // 代替テキスト
-        id="pawlovers-img"
+        className={styles.pawloversImg}
       />
 
-      <form className="login">
+      <form className={styles.login}> {/* ログインフォーム */}
 
-        <div className="form-group">
+        <div className={styles.formGroup}> {/* メールアドレス入力欄 */}
           <label htmlFor="email">メールアドレス</label>
-          <input // メールアドレス入力欄
-            type="email"
+          <input
             id="email"
+            type="email"
             placeholder="メールアドレスを入力してください"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
@@ -51,11 +48,11 @@ const AdminLoginPage = () => {
           />
         </div>
 
-        <div className="form-group">
+        <div className={styles.formGroup}> {/* パスワード入力欄 */}
           <label htmlFor="password">パスワード</label>
-          <input // パスワード入力欄
-            type="password"
+          <input
             id="password"
+            type="password"
             placeholder="パスワードを入力してください"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
@@ -63,22 +60,14 @@ const AdminLoginPage = () => {
           />
         </div>
 
-        <p id="error-message">{errorMessage}</p> 
+        <p id="error-message">{errorMessage}</p> {/* エラーメッセージを表示 */}
 
         <button // 「ログイン」ボタン
+          className={styles.loginButton}
           type="button"
           onClick={handleLogin}
         >
           ログイン
-        </button>
-
-        <p id="new">・・・・・・・・・・・・・・・・・初めての方はこちら・・・・・・・・・・・・・・・・・・</p>
-
-        <button //「新規会員登録」ボタン
-          type="button"
-          onClick={handleRegister}
-        >
-          新規会員登録
         </button>
 
       </form>
@@ -88,4 +77,4 @@ const AdminLoginPage = () => {
   );
 };
 
-export default AdminLoginPage;
+export default AdmiLoginPage;

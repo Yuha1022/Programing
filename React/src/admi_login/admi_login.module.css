@@ -9,7 +9,7 @@
     justify-content: center; /* 左右中央寄せ */
 }
 
-#pawlovers-img {
+.pawloversImg {
     width: 50%;
 }
 
@@ -24,7 +24,7 @@
     justify-content: center; /* 左右中央寄せ */
 }
 
-.form-group {
+.formGroup {
     width: 70%;
     margin-bottom: 20px; /* 下の余白(外側) */
     display: flex;
@@ -33,13 +33,13 @@
     justify-content: center; /* 左右中央寄せ */
 }
 
-label {
+.formGroup label {
     color: #000; /* 文字の色 */
     margin-top : 10px ; /* 上の余白(外側) */
     margin-right: auto; /* 右の余白(外側) */
 }
 
-input {
+.formGroup input {
     height: 40px;
     width: 100%;
     font-size: large; /* 文字の大きさ */
@@ -48,16 +48,16 @@ input {
     padding: 5px; /* 上下左右の余白(内側) */
 }
 
-p{
+.formGroup input::placeholder {
+    text-align: center; /* 中央揃え */
+}
+
+#error-message{
     height: 20px;
     color: red; /* 文字の色 */
 }
 
-#new{
-    color: #000; /* 文字の色 */
-}
-
-button {
+.loginButton {
     height: 50px;
     width: 50%;
     font-size: large; /* 文字の大きさ */
@@ -69,10 +69,6 @@ button {
     cursor: pointer; /* カーソル変更 */
 }
 
-button:hover {
+.loginButton:hover {
     background: #ff99cc; /* 背景色 */
-}
-
-::placeholder {
-    text-align: center; /* 中央揃え */
 }

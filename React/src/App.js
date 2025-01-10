@@ -1,14 +1,14 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import LoginPage from './admi_login/admi_login';  // ログインページ
+import AdmiLoginPage from './admi_login/admi_login';  // ログインページ
 
 function App() {
   return (
     <Router>
       <div className="App">
         <Routes>
-        <Route path="/" element={<LoginPage/>} /> {/* 初期表示でログインページ */}
-          <Route path="/login" element={<LoginPage />} /> {/* ログインページ */}
+        <Route path="/" element={<AdmiLoginPage/>} /> {/* 初期表示でログインページ */}
+          <Route path="/login" element={<AdmiLoginPage/>} /> {/* ログインページ */}
         </Routes>
       </div>
     </Router>
