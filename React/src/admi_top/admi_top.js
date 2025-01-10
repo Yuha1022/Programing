@@ -1,5 +1,5 @@
 // 管理者用トップ画面
-import React, { useState } from 'react'; // React、エラーメッセージ用
+import React from 'react'; // React、モーダル用
 import { useNavigate } from 'react-router-dom'; // ページ遷移用
 import styles from './admi_top.module.css'; // CSSモジュール
 

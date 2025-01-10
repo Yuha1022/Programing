@@ -1,0 +1,61 @@
+.ad-management-page {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .ad-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .ad-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin: 10px 0;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  .ad-title {
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .ad-status {
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: 0.9rem;
+  }
+  
+  .ad-status.active {
+    color: #fff;
+    background-color: #4caf50;
+  }
+  
+  .ad-status.inactive {
+    color: #fff;
+    background-color: #f44336;
+  }
+  
+  .toggle-button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    font-size: 0.9rem;
+  }
+  
+  .toggle-button:hover {
+    background-color: #0056b3;
+  }
+  
