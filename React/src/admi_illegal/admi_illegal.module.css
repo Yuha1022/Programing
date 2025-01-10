@@ -35,7 +35,7 @@
 
 .advertisementButton, .illegalButton, .logoutButton {
     width: 100%; /* 幅指定 */
-    font-size: x-large; /* 文字の大きさ */
+    font-size: large; /* 文字の大きさ */
     border: none; /* 枠線 */
     border-radius: 20px; /* 丸み */
     color: #000; /* 文字の色 */
@@ -99,7 +99,7 @@
 .userButton{
     flex: 2; /* 比率 */
     width: 100%; /* 幅指定 */
-    font-size: x-large; /* 文字の大きさ */
+    font-size: large; /* 文字の大きさ */
     border: none; /* 枠線 */
     border-radius: 30px; /* 丸み */
     color: #000; /* 文字の色 */
@@ -116,7 +116,7 @@
 .number{
     flex: 1; /* 比率 */
     width: 100%; /* 幅指定 */
-    font-size: x-large; /* 文字の大きさ */
+    font-size: large; /* 文字の大きさ */
     border-radius: 30px; /* 丸み */
     background: #FFD5EC; /* 背景色 */
     padding: 10px; /* 上下左右の余白(内側) */
