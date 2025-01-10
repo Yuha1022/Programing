@@ -19,10 +19,10 @@ const AdmiLoginPage = () => {
       setErrorMessage('※パスワードを入力してください。'); // エラーメッセージ表示
       return;
     } else if (email === 'admin@example.com' && password === 'password123') { // 仮のパスワード(成功例)
-      navigate('/top'); // トップページに移動
+      navigate('/admi_top'); // トップページに移動
     } else { // 失敗の場合
       setErrorMessage('※メールアドレスまたはパスワードが間違っています。'); // エラーメッセージ表示
-      navigate('/top'); // トップページに移動(仮)
+      navigate('/admi_top'); // トップページに移動(仮)
     }
   };
 
