@@ -52,7 +52,7 @@
     text-align: center; /* 中央揃え */
 }
 
-#error-message{
+.errorMessage{
     height: 20px; /* 高さ指定 */
     color: red; /* 文字の色 */
 }

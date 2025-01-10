@@ -60,7 +60,7 @@ const AdmiLoginPage = () => {
           />
         </div>
 
-        <p id="error-message">{errorMessage}</p> {/* エラーメッセージを表示 */}
+        <p className={styles.errorMessage}>{errorMessage}</p> {/* エラーメッセージを表示 */}
 
         <button // 「ログイン」ボタン
           className={styles.loginButton}
