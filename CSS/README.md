@@ -4,6 +4,12 @@ min-height/max-height/height
 
 min-width/max-width/width
 
+top/left/right/bottom
+
+position
+
+transform
+
 text-align
 
 font-size
