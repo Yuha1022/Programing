@@ -9,11 +9,11 @@ const AdmiTopPage = () => {
   const [isModalVisible, setIsModalVisible] = useState(false); // モーダルの表示状態
 
   const handleAdvertisement = () => { // 「広告管理」ボタン押下
-    navigate('/admi-advertisement'); // 広告管理画面に移動
+    navigate('/admi_advertisement'); // 広告管理画面に移動
   };
 
   const handleIllegal = () => { // 「違法ユーザ管理」ボタン押下
-    navigate('/admi-illegal'); // 違法ユーザ管理に移動
+    navigate('/admi_illegal'); // 違法ユーザ管理に移動
   };
 
   const handleLogout = () => { // 「ログアウト」ボタン押下
