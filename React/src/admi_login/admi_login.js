@@ -1,7 +1,7 @@
 import React, { useState } from 'react'; // React、エラーメッセージ用
 import { useNavigate } from 'react-router-dom'; // ページ遷移用
 import './admi_login.module.css'; // CSSファイル
-import pawloversImg from './pawlovers-side.jpg'; // PawLovers画像
+import pawloversImg from './admi_pawlovers-side.jpg'; // PawLovers画像
 
 const AdminLoginPage = () => {
   const navigate = useNavigate(); // ページ遷移用
