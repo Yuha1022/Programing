@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import AdmiLoginPage from './admi_login/admi_login'; // ログインページ
 import AdmiTopPage from './admi_top/admi_top'; // トップページ
 import AdmiAdvertisementPage from './admi_advertisement/admi_advertisement'; // 広告管理画面
+import AdmiIllegalPage from './admi_illegal/admi_illegal'; // 広告管理画面
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <Route path="/admi_login" element={<AdmiLoginPage/>} /> {/* ログインページ */}
           <Route path="/admi_top" element={<AdmiTopPage/>} /> {/* ログインページ */}
           <Route path="/admi_advertisement" element={<AdmiAdvertisementPage/>} /> {/* 広告管理画面 */}
+          <Route path="/admi_illegal" element={<AdmiIllegalPage/>} /> {/* 広告管理画面 */}
         </Routes>
       </div>
     </Router>

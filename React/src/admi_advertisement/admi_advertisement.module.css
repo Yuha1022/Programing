@@ -58,7 +58,7 @@
 }
 
 .white {
-  width: 90%;
+  width: 90%; /* 幅指定 */
   border-radius: 10px; /* 丸み */
   background: #fff; /* 背景色 */
   padding: 10px; /* 上下左右の余白(内側) */
@@ -95,7 +95,7 @@
 }
 
 .registerButton {
-  width: 20%;
+  width: 20%; /* 幅指定 */
   font-size: large; /* 文字の大きさ */
   border: none; /* 枠線 */
   border-radius: 30px; /* 丸み */
