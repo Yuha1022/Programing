@@ -29,7 +29,7 @@ const AdmiAdvertisementPage = () => {
   };
 
   const handleCompany = () => { //「企業名」ボタン押下 
-    navigate('/company'); // 広告詳細に移動
+    navigate('/admi_advertisement-detail'); // 広告詳細に移動
   };
 
   const handleRegister = () => { //「新規登録」ボタン押下 
