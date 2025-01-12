@@ -13,7 +13,7 @@ function App() {
     <Router>
       <div className="App">
         <Routes>
-        <Route path="/" element={<AdmiAdvertisementNewPage/>} /> {/* 初期表示でログインページ */}
+        <Route path="/" element={<AdmiLoginPage/>} /> {/* 初期表示でログインページ */}
           <Route path="/admi_login" element={<AdmiLoginPage/>} /> {/* ログインページ */}
           <Route path="/admi_top" element={<AdmiTopPage/>} /> {/* ログインページ */}
           <Route path="/admi_advertisement" element={<AdmiAdvertisementPage/>} /> {/* 広告管理画面 */}
