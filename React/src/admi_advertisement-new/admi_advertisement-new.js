@@ -1,4 +1,4 @@
-// 管理者の広告詳細画面
+// 管理者の広告新規登録画面
 import React, { useState } from 'react';  // React、モーダル用
 import { useNavigate } from 'react-router-dom'; // ページ遷移用
 import styles from './admi_advertisement-detail.module.css'; // CSSモジュール
