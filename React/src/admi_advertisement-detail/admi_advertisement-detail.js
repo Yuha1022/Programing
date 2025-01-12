@@ -21,7 +21,7 @@ const AdmiAdvertisementDetailPage = () => {
     };
 
     const handleOk = () => { // モーダルの「はい」ボタン押下
-        navigate('/admi_advertisement'); // トップページに移動
+        navigate('/admi_advertisement'); // 広告管理画面に移動
     };
 
     const handleNo = () => { // モーダルの「いいえ」ボタン押下

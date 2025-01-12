@@ -1,4 +1,4 @@
-// 管理者の違法ユーザ画面
+// 管理者の違法ユーザ管理画面
 import React, { useState } from 'react';  // React、モーダル用
 import { useNavigate } from 'react-router-dom'; // ページ遷移用
 import styles from './admi_illegal.module.css'; // CSSモジュール
@@ -29,7 +29,7 @@ const AdmiIllegalPage = () => {
   };
 
   const handleUser = () => { //「企業名」ボタン押下 
-    navigate('/user'); // 広告詳細に移動
+    navigate('/admi_illegal-detail'); // 広告詳細に移動
   };
 
   return (
