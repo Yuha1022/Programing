@@ -1,9 +1,9 @@
 // 管理者の広告新規登録画面
 import React, { useState } from 'react';  // React、モーダル用
 import { useNavigate } from 'react-router-dom'; // ページ遷移用
-import styles from './admi_advertisement-detail.module.css'; // CSSモジュール
+import styles from './admi_advertisement-new.module.css'; // CSSモジュール
 
-const AdmiAdvertisementDetailPage = () => {
+const AdmiAdvertisementNewPage = () => {
     const navigate = useNavigate(); // ページ遷移用
 
     const [isModalVisible, setIsModalVisible] = useState(false); // モーダルの表示状態
@@ -12,20 +12,8 @@ const AdmiAdvertisementDetailPage = () => {
         navigate('/admi_advertisement'); // 広告管理画面に移動
     };
 
-    const handleErase = () => { //「消去」ボタン押下 
-        setIsModalVisible(true); // モーダルを表示
-    };
-
     const handleReturn = () => { //「戻る」ボタン押下 
         navigate('/admi_advertisement'); // 広告管理画面に移動
-    };
-
-    const handleOk = () => { // モーダルの「はい」ボタン押下
-        navigate('/admi_advertisement'); // トップページに移動
-    };
-
-    const handleNo = () => { // モーダルの「いいえ」ボタン押下
-        setIsModalVisible(false); // モーダルを非表示
     };
 
     return (
@@ -80,14 +68,6 @@ const AdmiAdvertisementDetailPage = () => {
                             登録
                         </button>
 
-                        <button // 「消去」ボタン
-                            className={styles.eraseButton}
-                            type="button"
-                            onClick={handleErase}
-                        >
-                            消去
-                        </button>
-
                         <button // 「戻る」ボタン
                             className={styles.returnButton}
                             type="button"
@@ -102,32 +82,8 @@ const AdmiAdvertisementDetailPage = () => {
 
             </div>
 
-            {/* モーダル */}
-            {isModalVisible && ( //isModalVisibleがTrueのとき表示
-                <div className={styles.modal}>
-                    <div className={styles.content}>
-                        <p className={styles.comment}>この広告を消去しますか？</p>
-                        <div className={styles.buttons}>
-                            <button
-                                className={styles.okButton}
-                                type="button"
-                                onClick={handleOk}
-                            >
-                                はい
-                            </button>
-                            <button
-                                className={styles.noButton}
-                                type="button"
-                                onClick={handleNo}>
-                                いいえ
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            )}
-
         </div>
     );
 };
 
-export default AdmiAdvertisementDetailPage;
+export default AdmiAdvertisementNewPage;
