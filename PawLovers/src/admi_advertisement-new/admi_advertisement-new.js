@@ -1,12 +1,10 @@
 // 管理者の広告新規登録画面
-import React, { useState } from 'react';  // React、モーダル用
+import React from 'react';  // React用
 import { useNavigate } from 'react-router-dom'; // ページ遷移用
 import styles from './admi_advertisement-new.module.css'; // CSSモジュール
 
 const AdmiAdvertisementNewPage = () => {
     const navigate = useNavigate(); // ページ遷移用
-
-    const [isModalVisible, setIsModalVisible] = useState(false); // モーダルの表示状態
 
     const handleRegister = () => { //「新規登録」ボタン押下 
         navigate('/admi_advertisement'); // 広告管理画面に移動

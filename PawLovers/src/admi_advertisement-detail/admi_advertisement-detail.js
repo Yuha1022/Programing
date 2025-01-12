@@ -43,7 +43,7 @@ const AdmiAdvertisementDetailPage = () => {
                 <div className={styles.information}>
 
                     <div className={styles.formGroup}>
-                        <div className={styles. label}>担当者名<span>※</span></div>
+                        <div className={styles.label}>担当者名<span>※</span></div>
                         <div className={styles.item}>はすざき</div>
                     </div>
 
