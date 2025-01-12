@@ -10,17 +10,14 @@
 }
 
 .title {
-    height: 60px; /* 高さ指定 */
     width: 60%; /* 幅指定 */
-    text-align: center; /* 中央揃え */
     font-size: xx-large; /* 文字の大きさ */
-    border: 1px solid #ccc; /* 枠線 */
     border-radius: 30px; /* 丸み */
     color: #b09bd1; /* 文字の色 */
     background: #fff; /* 背景色 */
+    padding: 10px 10px; /* 上下左右の余白(内側) */
     margin: 40px; /* 上下左右の余白(外側) */
 }
-
 
 .main {
     width: 90%; /* 幅指定 */
@@ -46,8 +43,8 @@
 }
 
 .photo {
-    font-size: large; /* 文字の大きさ（必要に応じて調整） */
-    cursor: pointer; /* カーソルをポインタに変更 */
+    font-size: large; /* 文字の大きさ */
+    cursor: pointer; /* カーソル変更 */
 }
 
 .information{
@@ -67,7 +64,7 @@
     justify-content: center; /* 左右中央寄せ */
 }
 
-.formGroup label{
+.label{
     font-size: x-large; /* 文字の大きさ */
     margin-right: auto; /* 右の余白(外側) */
 }

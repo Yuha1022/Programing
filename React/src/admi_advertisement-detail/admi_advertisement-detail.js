@@ -30,11 +30,7 @@ const AdmiAdvertisementDetailPage = () => {
 
     return (
         <div className={styles.body}>
-            <input
-                className={styles.title}
-                type="text"
-                placeholder="会社名を入力※"
-            />
+            <div className={styles.title}>あ</div>
 
             <div className={styles.main}>
                 <div className={styles.file}>
@@ -47,28 +43,18 @@ const AdmiAdvertisementDetailPage = () => {
                 <div className={styles.information}>
 
                     <div className={styles.formGroup}>
-                        <label className={styles.name}>担当者名<span>※</span></label>
-                        <input className={styles.item}
-                            type="text"
-                            name="name"
-                        />
+                        <div className={styles. label}>担当者名<span>※</span></div>
+                        <div className={styles.item}>はすざき</div>
                     </div>
 
                     <div className={styles.formGroup}>
-                        <label className={styles.email}>メールアドレス<span>※</span></label>
-                        <input className={styles.item}
-                            type="email"
-                            name="email"
-                        />
+                        <div className={styles.label}>メールアドレス<span>※</span></div>
+                        <div className={styles.item}>@</div>
                     </div>
 
                     <div className={styles.formGroup}>
-                        <label className={styles.url}>URL</label>
-                        <input
-                            className={styles.item}
-                            type="text"
-                            name="URL"
-                        />
+                        <div className={styles.label}>URL</div>
+                        <div className={styles.item}>http://</div>
                     </div>
 
                     <div className={styles.push}>

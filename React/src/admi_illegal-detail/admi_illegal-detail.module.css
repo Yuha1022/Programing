@@ -10,17 +10,17 @@
 }
 
 .title {
-    width: 60%; 
+    width: 60%; /* 幅指定 */
     font-size: xx-large; /* 文字の大きさ */
     border-radius: 30px; /* 丸み */
-    background: #fff; /* 背景色 */
     color: #b09bd1; /* 文字の色 */
-    margin: 40px; /* 上下左右の余白(外側) */
+    background: #fff; /* 背景色 */
     padding: 10px 10px; /* 上下左右の余白(内側) */
+    margin: 40px; /* 上下左右の余白(外側) */
 }
 
 .main {
-    width: 90%; 
+    width: 90%; /* 幅指定 */
     border-radius: 10px; /* 丸み */
     background: #fff; /* 背景色 */
     padding: 20px; /* 上下左右の余白(内側) */
@@ -32,7 +32,7 @@
 }
 
 .item{
-    width: 100%;
+    width: 100%; /* 幅指定 */
     display: flex;
     flex-flow: column; /* 縦並び */
     align-items: center; /* 上下中央寄せ */
@@ -44,30 +44,30 @@
 }
 
 .input{
-    width: 90%;
-    height: 40px;
-    border: 1px solid #ccc; /* 枠線 */
+    width: 90%; /* 高さ指定 */
+    height: 40px; /* 幅指定 */
     font-size: x-large; /* 文字の大きさ */
+    border: 1px solid #ccc; /* 枠線 */
     border-radius: 30px; /* 丸み */
     background: #FFD5EC; /* 背景色 */
     padding: 10px; /* 上下左右の余白(内側) */
 }
 
 .push{
-    width: 80%;
+    width: 80%; /* 幅指定 */
     margin-top: 10px; /* 上下左右の余白(外側) */
     display: flex;
     justify-content: space-between; /* 横並び */
 }
 
 .eraseButton{
-    width: 30%;
+    width: 30%; /* 幅指定 */
     font-size: x-large; /* 文字の大きさ */
+    border: none; /* 枠線 */
     border-radius: 20px; /* 丸み */
     background: #ff8d78; /* 背景色 */
-    margin: 20px; /* 上下左右の余白(外側) */
     padding: 30px 50px; /* 上下左右の余白(内側) */
-    border: none; /* 枠線削除 */
+    margin: 20px; /* 上下左右の余白(外側) */
     cursor: pointer; /* カーソル変更 */
 }
 
@@ -76,13 +76,13 @@
 }
 
 .outButton {
-    width: 30%;
+    width: 30%; /* 幅指定 */
     font-size: x-large; /* 文字の大きさ */
+    border: none; /* 枠線 */
     border-radius: 20px; /* 丸み */
     background: #789cff;/* 背景色 */
-    margin: 20px; /* 上下左右の余白(外側) */
     padding: 30px 50px; /* 上下左右の余白(内側) */
-    border: none; /* 枠線削除 */
+    margin: 20px; /* 上下左右の余白(外側) */
     cursor: pointer; /* カーソル変更 */
 }
 
@@ -91,13 +91,13 @@
 }
 
 .returnButton {
-    width: 30%;
+    width: 30%; /* 幅指定 */
     font-size: x-large; /* 文字の大きさ */
     border: 1px solid #000; /* 枠線 */
     border-radius: 20px; /* 丸み */
     background: #fff;/* 背景色 */
-    margin: 20px; /* 上下左右の余白(外側) */
     padding: 30px 50px; /* 上下左右の余白(内側) */
+    margin: 20px; /* 上下左右の余白(外側) */
     cursor: pointer; /* カーソル変更 */
 }
 
