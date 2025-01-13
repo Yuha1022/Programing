@@ -18,11 +18,11 @@ const AdmiLoginPage = () => {
     } else if (!password) { // パスワードが空の場合
       setErrorMessage('※パスワードを入力してください。'); // エラーメッセージ表示
       return;
-    } else if (email === 'admin@example.com' && password === 'password123') { // 仮のパスワード(成功例)
+    } /*else if (email === 'admin@example.com' && password === 'password123') { // 仮のパスワード(成功例)
       navigate('/admi_top'); // トップページに移動
-    } else { // 失敗の場合
-      setErrorMessage('※メールアドレスまたはパスワードが間違っています。'); // エラーメッセージ表示
-      navigate('/admi_top'); // トップページに移動(仮)
+    }*/ else { // 失敗の場合
+      navigate('/admi_top'); // トップページに移動
+      //setErrorMessage('※メールアドレスまたはパスワードが間違っています。'); // エラーメッセージ表示
     }
   };
 
