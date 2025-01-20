@@ -52,11 +52,6 @@ const AdmiAdvertisementDetailPage = () => {
                         <div className={styles.item}>@</div>
                     </div>
 
-                    <div className={styles.formGroup}>
-                        <div className={styles.label}>URL</div>
-                        <div className={styles.item}>http://</div>
-                    </div>
-
                     <div className={styles.push}>
                         <button // 「登録」ボタン
                             className={styles.registerButton}

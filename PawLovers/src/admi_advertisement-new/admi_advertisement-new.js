@@ -48,15 +48,6 @@ const AdmiAdvertisementNewPage = () => {
                         />
                     </div>
 
-                    <div className={styles.formGroup}>
-                        <label className={styles.url}>URL</label>
-                        <input
-                            className={styles.item}
-                            type="text"
-                            name="URL"
-                        />
-                    </div>
-
                     <div className={styles.push}>
                         <button // 「登録」ボタン
                             className={styles.registerButton}

@@ -49,11 +49,6 @@ const AdmiIllegalDetailPage = () => {
                 </div>
 
                 <div className={styles.item}>
-                    <p className={styles.label}>マイページのURL</p>
-                    <div className={styles.input}>https:</div>
-                </div>
-
-                <div className={styles.item}>
                     <p className={styles.label}>通報数</p>
                     <div className={styles.input}>123456789</div>
                 </div>
@@ -72,7 +67,7 @@ const AdmiIllegalDetailPage = () => {
                         type="button"
                         onClick={handleOut}
                     >
-                        一部から除外
+                        一覧から除外
                     </button>
 
                     <button // 「戻る」ボタン
