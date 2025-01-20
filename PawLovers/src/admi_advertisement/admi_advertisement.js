@@ -143,7 +143,7 @@ const AdmiAdvertisementPage = () => {
           onClick={handleRegister}
           className={styles.registerButton}
         >
-          新規会員登録
+          新規企業登録
         </button>
         </div>
 
